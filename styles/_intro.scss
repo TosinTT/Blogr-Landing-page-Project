@@ -1,0 +1,101 @@
+.main-head {
+  background: url(/img/bg-pattern-intro-desktop.svg),
+    linear-gradient(to right, $gradient1, $gradient2);
+  border-bottom-left-radius: 13rem;
+  min-height: 85vh;
+  background-position: center;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 20vh;
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+}
+nav h1 img {
+  margin-right: 10rem;
+}
+
+.nav-links {
+  @include flex(flex-start, center, row);
+  // gap: 10rem;
+  flex: 1 1 60rem;
+}
+
+.nav-links ul {
+  @include flex(center, center, row);
+  width: 40rem;
+  flex: 1 1 60rem;
+  gap: 4rem;
+}
+
+.login {
+  @include flex(end, center, row);
+  width: 100%;
+}
+
+.login ul {
+  @include flex(end, center, row);
+  flex: 1 1 60rem;
+}
+
+.log a,
+.sign a {
+  padding: 1.5rem 3.5rem;
+  border-radius: 4rem;
+  transition: all 0.2s ease;
+  &:hover {
+    background: $text-color;
+
+    color: $hover;
+  }
+}
+
+// .main img {
+//   height: 50rem;
+// }
+
+.main {
+  @include flex(center, center, column);
+  min-height: 65vh;
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+
+  .header_text {
+    margin-top: 4rem;
+  }
+
+  .header_text h2 {
+    font-size: $header2;
+    margin: 2.5rem;
+  }
+  .header_text p {
+    color: $text-color;
+  }
+
+  .sign-up {
+    margin: 7rem;
+    padding-bottom: 10rem;
+  }
+
+  .sign-up ul {
+    @include flex(space-between, center, row);
+    gap: 2rem;
+  }
+
+  .start a,
+  .learn a {
+    border: 0.2rem solid white;
+    padding: 1.5rem 2rem;
+    border-radius: 4rem;
+    transition: all 0.2s ease;
+    font-weight: bold;
+
+    &:hover {
+      background: $text-color;
+      color: $hover;
+    }
+  }
+}

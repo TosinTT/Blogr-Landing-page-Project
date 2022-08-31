@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 50%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+h2 {
+  color: $text-color;
+}
+
+h3 {
+  color: $heading;
+  font-size: $header3;
+}
+
+h4 {
+  color: $heading;
+  font-size: $header4;
+}
+
+h5 {
+  font-size: $header5;
+}
+
+a,
+p,
+li {
+  font-size: $text;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+ul {
+  list-style: none;
+}

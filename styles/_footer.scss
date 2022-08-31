@@ -1,0 +1,37 @@
+footer {
+  background: $footer-background;
+  min-height: 50vh;
+  border-top-right-radius: 10rem;
+
+  .product a {
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+
+  .footer-link {
+    width: 90%;
+    min-height: 20vh;
+    margin: 0% 0% 0% auto;
+    background: $footer-background;
+    text-align: start;
+    @include flex(flex-start, flex-start, row);
+    gap: 20rem;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+
+    .title {
+      margin-bottom: 3rem;
+      font-weight: 600;
+      color: $text-color;
+    }
+
+    li {
+      line-height: 4rem;
+      color: $footer-text;
+    }
+  }
+
+  ul {
+    color: $text-color;
+  }
+}
