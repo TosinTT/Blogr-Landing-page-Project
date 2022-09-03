@@ -158,11 +158,11 @@ $gradient4: hsl(237, 17%, 21%);
 
   .nav-links {
     background: $text-color;
-    width: 85%;
-    height: 78rem;
+    width: 100%;
+    height: 100%;
     display: block;
     position: fixed;
-
+    left: 0%;
     top: -100%;
     border-radius: 1rem;
     @include flex(center, center, column);
@@ -198,14 +198,10 @@ $gradient4: hsl(237, 17%, 21%);
   .nav-open {
     transform: translateY(100%);
     z-index: 1;
-    margin-left: 15rem;
-    width: 85%;
-    margin: auto;
-    margin-top: 20rem;
   }
   .toggle .line1 {
     transform: rotateZ(45deg) translatey(300%);
-    background: white;
+    background: rgb(0, 0, 0);
   }
 
   .toggle .line2 {
@@ -214,7 +210,7 @@ $gradient4: hsl(237, 17%, 21%);
 
   .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
-    background: white;
+    background: rgb(0, 0, 0);
   }
 }
 
@@ -331,4 +327,7 @@ $gradient4: hsl(237, 17%, 21%);
   .main .header_text h2 {
     font-size: 3.5rem;
   }
+}
+
+@media (max-height: 689px) {
 }
